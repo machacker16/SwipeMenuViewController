@@ -255,6 +255,12 @@ func swipeMenuView(_ swipeMenuView: SwipeMenuView, titleForPageAt index: Int) ->
 // Return a ViewController to be displayed at the specified page in `SwipeMenuView`.
 func swipeMenuView(_ swipeMenuView: SwipeMenuView, viewControllerForPageAt index: Int) -> UIViewController
 
+// Called before setup `SwipeMenuView`.
+func swipeMenuView(_ swipeMenuView: SwipeMenuView, viewWillSetupAt currentIndex: Int)
+
+// Called after setup `SwipeMenuView`.
+func swipeMenuView(_ swipeMenuView: SwipeMenuView, viewDidSetupAt currentIndex: Int)
+
 // Called before swiping the page.
 func swipeMenuView(_ swipeMenuView: SwipeMenuView, willChangeIndexFrom fromIndex: Int, to toIndex: Int)
 
